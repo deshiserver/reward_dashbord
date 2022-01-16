@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/trialrr/public_html/credite-dashboard/
+    - export REPOPATH=/home/trialrr/credite-dashboard/
+    - rsync -aP --exclude '.env' ${REPOPATH}/ ${DEPLOYPATH}
